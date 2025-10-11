@@ -1,0 +1,208 @@
+body {
+  font-family: "Georgia", serif;
+  background-color: #fcfcfc;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Ensures padding and borders are included in element's total width/height */
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh; /* Full height to center content properly */
+  flex-direction: column;
+  gap: 40px;
+  padding-top: 10px;
+  box-sizing: border-box;
+}
+
+.invite-card {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  max-width: 100%;
+  display: block;
+}
+
+.invite-img {
+  width: 100%;
+  max-width: 400px; /* Image shouldn't stretch beyond a maximum width */
+  padding: 30px 20px;
+  height: auto;
+  object-fit: cover; /* Ensures the image scales nicely without distortion */
+}
+
+.details-card {
+  text-align: center;
+  padding: 30px 50px;
+  background-color: #ffffff;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.details-card h2 {
+  margin-bottom: 30px;
+  font-size: 50px;
+  font-weight: bold;
+  color: #333;
+  word-wrap: break-word; /* Prevent text overflow */
+}
+
+.buttons {
+  gap: 10px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.rsvp-btn {
+  text-decoration: none;
+  background-color: #333;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 6px;
+  font-size: 24px;
+  letter-spacing: 1px;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+}
+
+.rsvp-btn:hover {
+  background-color: #555151;
+}
+
+.wa-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  background-color: transparent;
+  border-radius: 6px;
+  transition: transform 0.2s ease;
+}
+
+.wa-icon:hover {
+  transform: scale(1.05);
+}
+
+.wa-logo {
+  width: 24px;
+  height: 24px;
+  display: block;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+.info h4 {
+  font-size: 24px;
+  letter-spacing: 1px;
+  color: #333;
+  margin: 0;
+  font-weight: bold;
+}
+
+.info p {
+  margin: 5px 0 0;
+  font-size: 25px;
+  color: #222;
+}
+
+.map-link {
+  color: #0f0f0f;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.map-link:hover {
+  color: #535151;
+}
+
+/* Countdown */
+.counter {
+  margin-top: 30px;
+  font-size: 26px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (min-width: 600px) {
+  .buttons {
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .info {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    flex-wrap: wrap;
+  }
+
+  .info div {
+    flex-basis: 30%;
+    margin: 10px 0;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  /* Adjust padding for smaller screens */
+  .container {
+    padding: 0 20px;
+  }
+
+  .details-card h2 {
+    font-size: 24px;
+    line-height: 1.3; /* Prevents the text from getting too tight */
+  }
+
+  .info {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .info div {
+    flex-basis: 100%;
+    margin: 10px 0;
+  }
+
+  .buttons {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .invite-img {
+    max-width: 100%;
+    padding: 20px 0;
+  }
+
+  .rsvp-btn {
+    font-size: 20px; /* Adjust button size for mobile */
+    padding: 10px 20px;
+  }
+
+  .counter {
+    font-size: 22px;
+  }
+}
+
+/* Landscape Orientation */
+@media screen and (orientation: landscape) {
+  .container {
+    padding: 0 40px; /* Add some padding to avoid edges */
+  }
+
+  .details-card h2 {
+    font-size: 40px; /* Adjust font size for landscape orientation */
+  }
+}
