@@ -11,7 +11,7 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 100vh; /* Full height to center content properly */
+  height: 100%; /* Full height to center content properly */
   flex-direction: column;
   gap: 40px;
   padding-top: 10px;
