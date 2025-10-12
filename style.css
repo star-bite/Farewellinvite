@@ -135,8 +135,8 @@ body {
 }
 
 footer {
-  background-color: #333;
-  color: #ffffff;
+  background-color: #ffffff;
+  color: #333;
   text-align: center;
   width: 100%;
   padding: 20px 10px;
@@ -160,10 +160,10 @@ footer h4 {
 }
 
 .organizers a {
-  color: #ffffff;
+  color: #333;
   text-decoration: none;
   font-weight: 500;
-  border: 1px solid #ffffff;
+  border: 1px solid #333;
   padding: 8px 15px;
   border-radius: 6px;
   transition: background-color 0.3s ease, transform 0.2s ease, color 0.3s ease;
@@ -171,7 +171,7 @@ footer h4 {
 
 .organizers a:hover {
   background-color: #555151;
-  color: #fff;
+  color: #333;
   transform: scale(1.05);
 }
 
